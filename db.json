@@ -1,16 +1,305 @@
 {
+    "pages": [{
+            "home": [{
+                "title": "",
+                "header_img": "",
+                "mid_img": "",
+                "aboutUs": [{
+                    "about_descr": "",
+                    "img": [{
+                        "img_1": "",
+                        "img_2": "",
+                        "img_3": ""
+                    }]
+                }]
+            }]
+        },
+        {
+            "villa": [{
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "header_img": "",
+                "galery": [{
+                    "img_1": "",
+                    "img_2": "",
+                    "img_3": "",
+                    "img_4": "",
+                    "img_5": "",
+                    "img_6": "",
+                    "img_7": "",
+                    "img_8": "",
+                    "img_9": "",
+                    "img_10": ""
+                }],
+                "video": ""
+            }]
+        },
+        {
+            "contact": [{
+                "title": "",
+                "street_name": "",
+                "house_no": "",
+                "city": "",
+                "postal_no": "",
+                "state": "",
+                "telephone": "",
+                "email": "",
+                "map": "",
+                "links": [{
+                    "facebook": "",
+                    "instagram": "",
+                    "booking": "",
+                    "airbnb": ""
+                }],
+                "usefulInfo": ""
+            }]
+        }
+    ],
     "apartments": [{
-        "id": 1,
-        "title": "Lux Apartment",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "price": [{
-            "highSeason": "250",
-            "midSeason": "200",
-            "lowSeason": "150"
-        }],
-        "amenities": [{
-            "internet": "Wi-Fi",
-            "bathroom": "Shower"
-        }]
-    }]
+            "id": 1,
+            "title": "",
+            "main_img": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "squares": "",
+            "price": [{
+                "highSeason": "",
+                "midSeason": "",
+                "lowSeason": ""
+            }],
+            "images": [{
+                "cover": "",
+                "gallery": [{
+                    "img_one": "",
+                    "img_two": "",
+                    "img_three": "",
+                    "img_four": "",
+                    "img_five": "",
+                    "img_six": "",
+                    "img_seven": "",
+                    "img_eight": "",
+                    "img_nine": "",
+                    "img_ten": ""
+                }]
+            }]
+        },
+        {
+            "id": 2,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "squares": "",
+            "price": [{
+                "highSeason": "",
+                "midSeason": "",
+                "lowSeason": ""
+            }],
+            "images": [{
+                "cover": "",
+                "gallery": [{
+                    "img_one": "",
+                    "img_two": "",
+                    "img_three": "",
+                    "img_four": "",
+                    "img_five": "",
+                    "img_six": "",
+                    "img_seven": "",
+                    "img_eight": "",
+                    "img_nine": "",
+                    "img_ten": ""
+                }]
+            }]
+        },
+        {
+            "id": 3,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "squares": "",
+            "price": [{
+                "highSeason": "",
+                "midSeason": "",
+                "lowSeason": ""
+            }],
+            "images": [{
+                "cover": "",
+                "gallery": [{
+                    "img_one": "",
+                    "img_two": "",
+                    "img_three": "",
+                    "img_four": "",
+                    "img_five": "",
+                    "img_six": "",
+                    "img_seven": "",
+                    "img_eight": "",
+                    "img_nine": "",
+                    "img_ten": ""
+                }]
+            }]
+        },
+        {
+            "id": 4,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "squares": "",
+            "price": [{
+                "highSeason": "",
+                "midSeason": "",
+                "lowSeason": ""
+            }],
+            "images": [{
+                "cover": "",
+                "gallery": [{
+                    "img_one": "",
+                    "img_two": "",
+                    "img_three": "",
+                    "img_four": "",
+                    "img_five": "",
+                    "img_six": "",
+                    "img_seven": "",
+                    "img_eight": "",
+                    "img_nine": "",
+                    "img_ten": ""
+                }]
+            }]
+        }
+    ],
+    "amenities": [{
+            "id": 1,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 2,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 3,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 4,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 5,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 6,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 7,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 8,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 9,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 10,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        }
+    ],
+    "services": [{
+            "id": 1,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 2,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 3,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 4,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 5,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 6,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 7,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 8,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 9,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        },
+        {
+            "id": 10,
+            "title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "",
+            "icon": ""
+        }
+    ]
 }
