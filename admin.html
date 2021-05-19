@@ -12,601 +12,65 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Updates</title>
 </head>
-<div class="container-fluid m-5">
-    <div class="title">
-        <h1>Update villa rentals info</h1>
+<div class="h-nav">
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="admin.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Dashboard</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="admin_home.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home Page</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin_villa.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Villa</span></a>
+                        </li>
+                        <li>
+                            <a href="admin_amenities.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Amenities</span></a>
+                        </li>
+                        <li>
+                            <a href="admin_services.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Services</span></a>
+                        </li>
+                        <li>
+                            <a href="admin_apartments.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Apartments</span></a>
+                        </li>
+                        <li>
+                            <a href="admin_contacts.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Contact details</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://via.placeholder.com/30x30" alt="hugenerd" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li> -->
+                            <li><a class="dropdown-item" href="index.html">Back to homepage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 p-5 m-5">
+                <h1>Here you can edit your villa info</h1>
+            </div>
+        </div>
     </div>
 </div>
-
-<!-- Home page -->
-<section class="home-page">
-    <div class="container-fluid m-5">
-        <div class="row m-5">
-            <div class="col-md-6">
-                <h2>Header</h2>
-                <div class="header-edit">
-                    <h3>Header title</h3>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert a main title" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <h3>Header image slider</h3>
-                <div class="slider-preview">
-                    <div class="slides m-5">
-                        <img class="img-fluid" src="https://via.placeholder.com/150x75" lass="rounded mx-auto d-block" alt="">
-                        <img class="img-fluid" src="https://via.placeholder.com/150x75" lass="rounded mx-auto d-block" alt="">
-                        <img class="img-fluid" src="https://via.placeholder.com/150x75" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-                <div class="slider-links">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <h3>Section image</h3>
-                    <div class="section-preview m-5">
-                        <img src="https://via.placeholder.com/250x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="intro-section">
-                    <h2>Intro Section</h2>
-                    <div class="intro-edit">
-                        <h3>Title</h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert title" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert text" aria-label="description" aria-describedby="button-addon2" style="height: 100px;">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="testemony mt-5">
-                    <h2>Testemony Section</h2>
-                    <div class="intro-edit">
-                        <h3>Testemony</h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Add some text about your stay in aour vila. Thank You." aria-label="image link" aria-describedby="button-addon2" style="height: 100px;">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="person-image m-3">
-                                <img src="https://via.placeholder.com/100x100" alt="" style="border-radius: 100px;">
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Villa Page -->
-<section class="villa-page pt-5">
-    <div class="container-fluid m-5">
-        <div class="row m-5">
-            <div class="col-md-6">
-                <h2>Edit villa properties</h2>
-                <div class="header-edit">
-                    <h3>Header title</h3>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert a main title" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <h3>Hero image</h3>
-                <div class="hero-preview">
-                    <div class="hero m-5">
-                        <img class="img-fluid" src="https://via.placeholder.com/150x75" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-                <div class="hero-link">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="intro-section">
-                    <div class="intro-edit">
-                        <h3>Title</h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert title" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert text" aria-label="description" aria-describedby="button-addon2" style="height: 100px;">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                        <div class="video-link">
-                            <h3>Video link</h3>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Insert video link" aria-label="description" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h3>Insert galery images</h3>
-                <div class="gallery">
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="preview pb-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/140x75" lass="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Insert image link" aria-label="image link" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Amenities -->
-<section class="amenities pt-5">
-    <div class="container-fluid m-5">
-        <h3>Edit Amenities</h3>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3>Add new amenity</h3>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="amnt-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Add</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Add</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Services -->
-<section class="services pt-5">
-    <div class="container-fluid m-5">
-        <h3>Edit Services</h3>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="srvcs-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="srvc-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="srvc-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="srvc-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3>Add new service</h3>
-        <div class="row m-5">
-            <div class="col-md-2">
-                <div class="service-preview">
-                    <div class="section-preview">
-                        <img src="https://via.placeholder.com/150x150" lass="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 m-4">
-                <div class="edit-img">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insert new image link" aria-label="image link" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Add</button>
-                    </div>
-                </div>
-                <div class="edit-description">
-                    <div class="input-group mb-3" style="height: 75px;">
-                        <input type="text" class="form-control" placeholder="New description" aria-label="amnt-description" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Add</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact edit -->
-<section class="contact-edit m-5">
-    <div class="container-fluid mt-5">
-        <h3>Edit contact info</h3>
-        <div class="row m-5">
-            <div class="col-md-6">
-                <h4>Contact details</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Title" aria-label="title" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Street name" aria-label="street-name" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="House number" aria-label="house-number" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Town/City" aria-label="city" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Post number" aria-label="post-no" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="State" aria-label="state" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h4>Telephone and mail</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Telephone Number" aria-label="phone-no" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="E-mail" aria-label="e-mail" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Google Map embeded link" aria-label="g-map" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <h4>Social media links</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Facebook" aria-label="fcbk" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Instagram" aria-label="instagram" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="booking.com" aria-label="booking" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="AirBnB" aria-label="airbnb" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Update</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <body>
     <script src="js/admin.js "></script>
