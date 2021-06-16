@@ -85,14 +85,19 @@
                                     <div class="hero-image mt-5">
                                         <h3>Hero image</h3>
                                         <div class="hero-preview ">
-                                            <div class="hero-vila m-5 ">
+                                            <div class="hero-villa m-5 ">
+                                                <h4>Image preview</h4>
                                                 <img class="img-fluid rounded mx-auto d-block" src="https://via.placeholder.com/250x150 " alt=" ">
                                             </div>
                                         </div>
                                         <div class="hero-link ">
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
+                                            <div class="img-upld">
+                                                <h4>Insert image</h4>
+                                                <p>File must be 1920x900</p>
+                                                <div class="input-group">
+                                                    <input class="form-control" id="upload" type="file" onchange="readURL(this);" value="">
+                                                    <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -134,188 +139,88 @@
                                                 <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
                                             </div>
                                         </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
-                                        <div class="image ">
-                                            <div class="preview pb-1 ">
-                                                <img class="img-fluid " src="https://via.placeholder.com/140x75 " lass="rounded mx-auto d-block " alt=" ">
-                                            </div>
-                                            <div class="input-group mb-3 ">
-                                                <input type="text " class="form-control " placeholder="Insert image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div> -->
                                 <!-- Image Galery -->
                                 <div class="col-lg-6 mt-5">
                                     <h3>Image galery</h3>
-                                    <div class="container container-fluid">
-                                        <div class="row d-flex justify-content-between">
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 mt-5">
+                                            <div class="imag-upload">
+                                                <h4>Insert image</h4>
+                                                <div class="input-group mb-3 ">
+                                                    <input type="text" class="form-control" placeholder="Insert image link " aria-label="apartment-title" aria-describedby="button-addon2 ">
+                                                    <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
+                                            <div class="img-upld">
+                                                <h4>Insert image</h4>
+                                                <div class="input-group">
+                                                    <input class="form-control" id="upload" type="file" onchange="readURL(this);" value="">
+                                                    <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mt-5">
-                                                <div class="imag-upload">
-                                                    <h4>Insert image</h4>
-                                                    <div class="input-group mb-3 ">
-                                                        <input type="text" class="form-control" placeholder="Insert image link " aria-label="apartment-title" aria-describedby="button-addon2 ">
-                                                        <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
+                                    </div>
+                                    <div class="container container-fluid p-2 ">
+                                        <h4>Image preview</h4>
+                                        <div class="row d-flex justify-content-between ">
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="amenities">
-                                        <div class="row">
-                                            <div class="col-md-12 mt-5">
+                                    <div class="amenities ">
+                                        <div class="row ">
+                                            <div class="col-md-12 mt-5 ">
                                                 <h4>Villa Amenities</h4>
                                                 <p>Please sheck amanities available in the apartment</p>
-                                                <div class="col-md-6">
-                                                    <div class="selection m-3">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                <div class="col-md-6 ">
+                                                    <div class="selection m-3 ">
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                                                            <label class="form-check-label " for="flexCheckDefault ">Default checkbox</label>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                                                            <label class="form-check-label " for="flexCheckDefault ">Default checkbox</label>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                                                            <label class="form-check-label " for="flexCheckDefault ">Default checkbox</label>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                                                            <label class="form-check-label " for="flexCheckDefault ">Default checkbox</label>
                                                         </div>
-                                                        <button class="btn btn-outline-primary bt-sm" type="button" id="button-addon2 ">Update amenities</button>
+                                                        <button class="btn btn-outline-primary bt-sm " type="button " id="button-addon2 ">Update amenities</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -330,7 +235,6 @@
         </div>
     </div>
     <!-- !!!: Script -->
-    <script src="js/index.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js "></script>
 </body>

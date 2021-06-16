@@ -8,7 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <title>Apartments settings</title>
 </head>
@@ -70,8 +70,8 @@
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Select the apartment</option>
                                     <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <!-- <option value="2">Two</option>
+                                    <option value="3">Three</option> -->
                                 </select>
                                 <div class="col-lg-6 mt-5">
                                     <h3>Edit header title</h3>
@@ -129,46 +129,45 @@
                                 <!-- Image gallery -->
                                 <div class="col-lg-6 mt-5">
                                     <h3>Image galery</h3>
-                                    <div class="container container-fluid">
-                                        <div class="row d-flex justify-content-between">
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <div class="row">
+                                        <div class="img-upld m-4">
+                                            <h4>Insert image</h4>
+                                            <div class="input-group">
+                                                <input class="form-control" id="upload" type="file" onchange="readURL(this);" value="">
+                                                <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mt-5">
-                                                <div class="imag-upload">
-                                                    <h4>Insert image</h4>
-                                                    <div class="input-group mb-3 ">
-                                                        <input type="text" class="form-control" placeholder="Insert image link " aria-label="apartment-title" aria-describedby="button-addon2 ">
-                                                        <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
+                                    </div>
+                                    <div class="container container-fluid">
+                                        <div class="row d-flex justify-content-between">
+                                            <h4 class="img-preeview">Image preeview</h4>
+                                            <div class="col-lg-4 col-sm-12">
+                                                <div class="card d-flex align-items-center p-1">
+                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
+                                                    <div class="card-body p-1">
+                                                        <div class="card-btn">
+                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12">
+                                                <div class="card d-flex align-items-center p-1">
+                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
+                                                    <div class="card-body p-1">
+                                                        <div class="card-btn">
+                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12">
+                                                <div class="card d-flex align-items-center p-1">
+                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
+                                                    <div class="card-body p-1">
+                                                        <div class="card-btn">
+                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -214,7 +213,35 @@
     </div>
     </div>
     <!-- !!!: Script -->
-    <script src="js/index.js"></script>
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958",
+            authDomain: "accomodation-rental.firebaseapp.com",
+            projectId: "accomodation-rental",
+            storageBucket: "accomodation-rental.appspot.com",
+            messagingSenderId: "216200653654",
+            appId: "1:216200653654:web:a9adef2a9307ed628504f7",
+            measurementId: "G-B93DFG1GYE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const db = firebase.firestore()
+    </script>
+    <!-- Firebase end -->
+    <script src="js/admin_apartments.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
 </body>
