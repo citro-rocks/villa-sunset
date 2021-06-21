@@ -62,31 +62,19 @@
                     </div>
                 </div>
                 <div class="col py-3 p-5 m-5">
-                    <h1>Here you can edit your apartments info</h1>
-                    <div class="container-fluid pt-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="create-apartment">
-                                    <a class="btn btn-primary" href="new_accomodation.html" role="button">Create New Accomodation</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>Here you can create new accomodation</h1>
                     <!-- !!!: Apartments -->
                     <section class="apartments pt-5">
                         <div class="container-fluid">
                             <div class="row">
-                                <select id="apSelection" class="form-select" aria-label="Default select example">
-                                    <option selected>Select the apartment</option>
-                                </select>
                                 <div class="col-lg-6 mt-5">
-                                    <h3>Edit header title</h3>
+                                    <h3>Add title</h3>
                                     <div class="header-edit ">
                                         <h4>Header title</h4>
                                         <div id="apTitlePrvw" class="apartment-description-prvw">
                                         </div>
                                         <div class="input-group mb-3 ">
-                                            <input type="text" class="form-control" placeholder="Insert new apartment title " aria-label="apartment-title" aria-describedby="button-addon2 ">
+                                            <input type="text" class="form-control" placeholder="Insert new accomodation title " aria-label="apartment-title" aria-describedby="button-addon2 ">
                                             <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
                                             <div class="title-prw">
                                                 <!-- title preeview -->
@@ -101,7 +89,7 @@
                                                 <textarea class="form-control" id="apartment-description" rows="3"></textarea>
                                                 <!-- <input type="text" id="apartment-description"> -->
                                                 <div class="description-updt">
-                                                    <button class="btn btn-outline-primary float-end mt-1" type="button" id="button-addon2 ">Update</button>
+                                                    <button class="btn btn-outline-primary float-end mt-1" type="button" id="button-addon2 ">Add</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -111,6 +99,10 @@
                                             <div class="size-drop mt-5">
                                                 <select id="sizeSelection" class="form-select" aria-label="Default select example">
                                                     <option selected>Apartment size in m2</option>
+                                                    <option value="50">50 m2</option>
+                                                    <option value="65">65 m2</option>
+                                                    <option value="80">80 m2</option>
+                                                    <option value="100">100 m2</option>
                                                   </select>
                                             </div>
                                         </div>
@@ -118,6 +110,9 @@
                                             <div class="size-drop mt-5">
                                                 <select id="bedroomNo" class="bedroom form-select" aria-label="Default select example">
                                                     <option selected>Bedrooms</option>
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
                                                   </select>
                                             </div>
                                         </div>
@@ -125,6 +120,9 @@
                                             <div class="size-drop mt-5">
                                                 <select id="bathroomNo" class="bathrooms form-select" aria-label="Default select example">
                                                     <option selected>Bathrooms</option>
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -134,32 +132,27 @@
                                             <div class="col-sm-12 mt-5">
                                                 <h4>Select price</h4>
                                                 <p>Please sheck price range by season</p>
-                                                <div class="col-md-6">
-                                                    <div class="selection m-3">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                <div class="col-md-12">
+                                                    <div class="selection">
+                                                        <h4>Season</h4>
+                                                        <div class="input-group mb-3 ">
+                                                            <input type="text" class="form-control" placeholder="Insert season title" aria-label="apartment-title" aria-describedby="button-addon2 ">
+                                                            <input type="number" class="form-control" placeholder="Insert season price" aria-label="apartment-price" aria-describedby="button-addon2 ">
+                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
+                                                            <!-- price preeview -->
+                                                            <div class="price-prw">
+                                                                <p></p>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                                        <div class="add-new-season-price">
+                                                            <button class="btn btn-primary" type="button">Add new season and price</button>
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <button class="btn btn-outline-primary bt-sm" type="button" id="button-addon2 ">Update price</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Image gallery -->
                                 <div class="col-lg-6 mt-5">
                                     <h3>Image galery</h3>
@@ -207,7 +200,73 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="amenities">
+                                    <!-- Amanitys -->
+
+                                    <div class="container-fluid mt-3 p-0">
+                                        <h4>Add accomodation amanities</h4>
+                                        <div class="row p-2">
+                                            <div class="col-md-4">
+                                                <div class="amnt-img ">
+                                                    <div class="img-preview ">
+                                                        <img src="https://via.placeholder.com/200x100 " class="rounded mx-auto d-block " alt=" ">
+                                                    </div>
+                                                </div>
+                                                <div class="amnt-icon p-5 ">
+                                                    <div class="icon-preview ">
+                                                        <img class="icon rounded-circle " src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 ">
+                                                <div class="add-img p-2 ">
+                                                    <!-- <div class="input-group mb-3 ">
+                                                            <input type="text " class="form-control " placeholder="Insert new image link " aria-label="image link " aria-describedby="button-addon2 ">
+                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
+                                                        </div> -->
+                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                        <div class="amenity-image ">
+                                                            <input type="text" class="form-control" placeholder="Insert amenity image" aria-label="apartment-title" aria-describedby="button-addon2 ">
+                                                            <!-- <textarea class="form-control " id="amenity-description " placeholder="Insert new image link "></textarea> -->
+                                                            <div class="description-updt ">
+                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-icon p-2 ">
+                                                    <!-- <div class="input-group mb-3 ">
+                                                            <input type="text " class="form-control " placeholder="Insert new image link " aria-label="image link " aria-describedby="button-addon2 ">
+                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
+                                                        </div> -->
+                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                        <div class="amenity-icon ">
+                                                            <textarea class="form-control " id="apartment-description " placeholder="Insert icon link "></textarea>
+                                                            <div class="description-updt ">
+                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="edit-description ">
+                                                        <div class="input-group mb-3 " style="height: 75px; ">
+                                                            <input type="text " class="form-control " placeholder="New description " aria-label="amnt-description " aria-describedby="button-addon2 " rows="3 ">
+                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
+                                                        </div>
+                                                    </div> -->
+                                                <div class="add-description p-2 ">
+                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                        <div class="amenity-dscription ">
+                                                            <textarea class="form-control " id="apartment-description " rows="3 " placeholder="Insert description "></textarea>
+                                                            <div class="description-updt ">
+                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="amenities">
                                         <div class="row">
                                             <div class="col-md-12 mt-5">
                                                 <h4>Apartment Amenities</h4>
@@ -235,15 +294,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
-
                             </div>
                         </div>
-                    </section>
                 </div>
+                </section>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <!-- !!!: Script -->
@@ -275,7 +334,7 @@
         const db = firebase.firestore()
     </script>
     <!-- Firebase end -->
-    <script src="js/admin_apartments.js"></script>
+    <script src="js/new_accomodation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
 </body>
