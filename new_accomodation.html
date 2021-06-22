@@ -64,88 +64,88 @@
                 <div class="col py-3 p-5 m-5">
                     <h1>Here you can create new accomodation</h1>
                     <!-- !!!: Apartments -->
-                    <section class="apartments pt-5">
+                    <section class="new-accomodation p-5">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-6 mt-5">
-                                    <h3>Add title</h3>
+                                <div class="col-lg-6 mt-5" style="border: solid 1px;">
+                                    <h3>Add title and description</h3>
                                     <div class="header-edit ">
-                                        <h4>Header title</h4>
-                                        <div id="apTitlePrvw" class="apartment-description-prvw">
+                                        <label for="# ">New accomodation title</label>
+                                        <div id="apTitlePrvw " class="apartment-description-prvw ">
                                         </div>
                                         <div class="input-group mb-3 ">
-                                            <input type="text" class="form-control" placeholder="Insert new accomodation title " aria-label="apartment-title" aria-describedby="button-addon2 ">
-                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                            <div class="title-prw">
+                                            <input type="text " class="form-control " placeholder="Insert new accomodation title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                            <!-- <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button> -->
+                                            <div class="title-prw ">
                                                 <!-- title preeview -->
                                                 <p></p>
                                             </div>
                                         </div>
-                                        <div class="ap-dscr mt-5 d-grid gap-2 d-md-block">
-                                            <div class="apartment-dscription">
-                                                <h4>Apartment description</h4>
-                                                <div id="apDscrPrvw" class="apartment-description-prvw">
+                                        <div class="ap-dscr mt-5 d-grid gap-2 d-md-block ">
+                                            <div class="apartment-dscription ">
+                                                <label for="# ">Accomodation description</label>
+                                                <div id="apDscrPrvw " class="apartment-description-prvw ">
                                                 </div>
-                                                <textarea class="form-control" id="apartment-description" rows="3"></textarea>
-                                                <!-- <input type="text" id="apartment-description"> -->
-                                                <div class="description-updt">
-                                                    <button class="btn btn-outline-primary float-end mt-1" type="button" id="button-addon2 ">Add</button>
-                                                </div>
+                                                <textarea class="form-control " id="apartment-description " rows="3 "></textarea>
+                                                <!-- <input type="text " id="apartment-description "> -->
+                                                <!-- <div class="description-updt ">
+                                                    <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mt-5">
-                                        <div class="col-sm-4">
-                                            <div class="size-drop mt-5">
-                                                <select id="sizeSelection" class="form-select" aria-label="Default select example">
-                                                    <option selected>Apartment size in m2</option>
-                                                    <option value="50">50 m2</option>
-                                                    <option value="65">65 m2</option>
-                                                    <option value="80">80 m2</option>
-                                                    <option value="100">100 m2</option>
+                                    <div class="row mt-2 ">
+                                        <div class="col-sm-4 ">
+                                            <div class="size-drop mt-5 ">
+                                                <select id="sizeSelection " class="form-select " aria-label="Default select example ">
+                                                    <option selected>Size in m2</option>
+                                                    <option value="50 ">50 m2</option>
+                                                    <option value="65 ">65 m2</option>
+                                                    <option value="80 ">80 m2</option>
+                                                    <option value="100 ">100 m2</option>
                                                   </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="size-drop mt-5">
-                                                <select id="bedroomNo" class="bedroom form-select" aria-label="Default select example">
-                                                    <option selected>Bedrooms</option>
-                                                    <option value="one">1</option>
-                                                    <option value="two">2</option>
-                                                    <option value="three">3</option>
+                                        <div class="col-sm-4 ">
+                                            <div class="size-drop mt-5 ">
+                                                <select id="bedroomNo " class="bedroom form-select " aria-label="Default select example ">
+                                                    <option selected>Number of bedrooms</option>
+                                                    <option value="one ">1</option>
+                                                    <option value="two ">2</option>
+                                                    <option value="three ">3</option>
                                                   </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="size-drop mt-5">
-                                                <select id="bathroomNo" class="bathrooms form-select" aria-label="Default select example">
-                                                    <option selected>Bathrooms</option>
-                                                    <option value="one">1</option>
-                                                    <option value="two">2</option>
-                                                    <option value="three">3</option>
+                                        <div class="col-sm-4 ">
+                                            <div class="size-drop mt-5 ">
+                                                <select id="bathroomNo " class="bathrooms form-select " aria-label="Default select example ">
+                                                    <option selected>Number if bathrooms</option>
+                                                    <option value="one ">1</option>
+                                                    <option value="two ">2</option>
+                                                    <option value="three ">3</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prices">
-                                        <div class="row">
-                                            <div class="col-sm-12 mt-5">
+                                    <div class="prices ">
+                                        <div class="row ">
+                                            <div class="col-sm-12 mt-5 ">
                                                 <h4>Select price</h4>
                                                 <p>Please sheck price range by season</p>
-                                                <div class="col-md-12">
-                                                    <div class="selection">
+                                                <div class="col-md-12 ">
+                                                    <div class="selection ">
                                                         <h4>Season</h4>
                                                         <div class="input-group mb-3 ">
-                                                            <input type="text" class="form-control" placeholder="Insert season title" aria-label="apartment-title" aria-describedby="button-addon2 ">
-                                                            <input type="number" class="form-control" placeholder="Insert season price" aria-label="apartment-price" aria-describedby="button-addon2 ">
+                                                            <input type="text " class="form-control " placeholder="Insert season title " aria-label="apartment-title " aria-describedby="button-addon2 ">
+                                                            <input type="number " class="form-control " placeholder="Insert season price " aria-label="apartment-price " aria-describedby="button-addon2 ">
                                                             <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
                                                             <!-- price preeview -->
-                                                            <div class="price-prw">
+                                                            <div class="price-prw ">
                                                                 <p></p>
                                                             </div>
                                                         </div>
-                                                        <div class="add-new-season-price">
-                                                            <button class="btn btn-primary" type="button">Add new season and price</button>
+                                                        <div class="add-new-season-price ">
+                                                            <button class="btn btn-primary " type="button ">Add new season and price</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -154,46 +154,44 @@
                                     </div>
                                 </div>
                                 <!-- Image gallery -->
-                                <div class="col-lg-6 mt-5">
-                                    <h3>Image galery</h3>
-                                    <div class="row">
-                                        <div class="img-upld m-4">
-                                            <h4>Insert image</h4>
-                                            <div class="input-group">
-                                                <input class="form-control" id="upload" type="file" onchange="readURL(this);" value="">
-                                                <button class="btn btn-outline-primary btn-sm" type="button " id="button-addon2 ">Upload</button>
+                                <div class="col-lg-6 mt-5 " style="border: solid 1px;">
+                                    <div class="container container-fluid ">
+                                        <div class="row d-flex justify-content-between mb-3 ">
+                                            <h3>Image galery</h3>
+                                            <div class="img-upld ">
+                                                <label for="# ">Insert image</label>
+                                                <div class="input-group ">
+                                                    <input class="form-control " id="upload " type="file " onchange="readURL(this); " value=" ">
+                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="container container-fluid">
-                                        <div class="row d-flex justify-content-between">
-                                            <h4 class="img-preeview">Image preeview</h4>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                            <label for="# ">Gallery preview</label>
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-12">
-                                                <div class="card d-flex align-items-center p-1">
-                                                    <img class="card-img-top img-fluid" src="https://via.placeholder.com/400x300" alt="Card image">
-                                                    <div class="card-body p-1">
-                                                        <div class="card-btn">
-                                                            <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2 ">Delete image</button>
+                                            <div class="col-lg-4 col-sm-12 ">
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <div class="card-body p-1 ">
+                                                        <div class="card-btn ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -201,134 +199,89 @@
                                         </div>
                                     </div>
                                     <!-- Amanitys -->
-
-                                    <div class="container-fluid mt-3 p-0">
+                                    <div class="container container-fluid mt-3 ">
                                         <h4>Add accomodation amanities</h4>
-                                        <div class="row p-2">
-                                            <div class="col-md-4">
-                                                <div class="amnt-img ">
-                                                    <div class="img-preview ">
-                                                        <img src="https://via.placeholder.com/200x100 " class="rounded mx-auto d-block " alt=" ">
-                                                    </div>
-                                                </div>
-                                                <div class="amnt-icon p-5 ">
-                                                    <div class="icon-preview ">
-                                                        <img class="icon rounded-circle " src="https://via.placeholder.com/100x100 " alt="Card icon ">
-                                                    </div>
+                                        <div class="row d-flex justify-content-between ">
+                                            <div class="col-md-4 ">
+                                                <label for=" ">Amanity preview</label>
+                                                <div class="card d-flex align-items-center p-1 ">
+                                                    <h4>Amenity title</h4>
+                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                    <p>Amenity short description</p>
+                                                    <img class="icon rounded-circle " src="https://via.placeholder.com/100x100 " alt="Card icon ">
                                                 </div>
                                             </div>
                                             <div class="col-md-8 ">
-                                                <div class="add-img p-2 ">
-                                                    <!-- <div class="input-group mb-3 ">
-                                                            <input type="text " class="form-control " placeholder="Insert new image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
-                                                        </div> -->
+                                                <div class="amnt-title-descr ">
                                                     <div class="ap-dscr d-grid gap-2 d-md-block ">
-                                                        <div class="amenity-image ">
-                                                            <input type="text" class="form-control" placeholder="Insert amenity image" aria-label="apartment-title" aria-describedby="button-addon2 ">
-                                                            <!-- <textarea class="form-control " id="amenity-description " placeholder="Insert new image link "></textarea> -->
-                                                            <div class="description-updt ">
-                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
-                                                            </div>
+                                                        <div class="amenity-title p-2 ">
+                                                            <label for=" ">Amenity title</label>
+                                                            <input type="text " class="amnt-title form-control " id="amntTitle " placeholder="Insert amenity title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                        </div>
+                                                        <div class="amenity-description p-2 ">
+                                                            <label for=" ">Amenity description</label>
+                                                            <input type="text " class="amnt-description form-control " id="amntDescript " placeholder="Insert short amenity description " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                    <div class="amenity-image p-2 ">
+                                                        <label for=" ">Amenity image 400x300</label>
+                                                        <div class="input-group ">
+                                                            <input class="form-control " id="upload " type="file " onchange="readURL(this); " value=" ">
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="add-icon p-2 ">
-                                                    <!-- <div class="input-group mb-3 ">
-                                                            <input type="text " class="form-control " placeholder="Insert new image link " aria-label="image link " aria-describedby="button-addon2 ">
-                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
-                                                        </div> -->
                                                     <div class="ap-dscr d-grid gap-2 d-md-block ">
                                                         <div class="amenity-icon ">
-                                                            <textarea class="form-control " id="apartment-description " placeholder="Insert icon link "></textarea>
-                                                            <div class="description-updt ">
-                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="edit-description ">
-                                                        <div class="input-group mb-3 " style="height: 75px; ">
-                                                            <input type="text " class="form-control " placeholder="New description " aria-label="amnt-description " aria-describedby="button-addon2 " rows="3 ">
-                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Add</button>
-                                                        </div>
-                                                    </div> -->
-                                                <div class="add-description p-2 ">
-                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
-                                                        <div class="amenity-dscription ">
-                                                            <textarea class="form-control " id="apartment-description " rows="3 " placeholder="Insert description "></textarea>
-                                                            <div class="description-updt ">
-                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                            <label for=" ">Amenity icon 50x50</label>
+                                                            <div class="input-group ">
+                                                                <input class="form-control " id="upload " type="file " onchange="readURL(this); " value=" ">
+                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="add-new-amenity">
-                                                <button class="btn btn-primary" type="button">Add new amenity</button>
+                                            <div class="add-new-amenity pt-3 ">
+                                                <button class="btn btn-primary " type="button ">Add new amenity</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="amenities">
-                                        <div class="row">
-                                            <div class="col-md-12 mt-5">
-                                                <h4>Apartment Amenities</h4>
-                                                <p>Please sheck amanities available in the apartment</p>
-                                                <div class="col-md-6">
-                                                    <div class="selection m-3">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                                                        </div>
-                                                        <button class="btn btn-outline-primary bt-sm" type="button" id="button-addon2 ">Update amenities</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
+                        <div class="add-new-accomodation p-4 ">
+                            <button class="btn btn-primary " type="button ">Create new accomodation</button>
+                        </div>
+                    </section>
                 </div>
-                </section>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <!-- !!!: Script -->
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js "></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js "></script>
 
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-            apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958",
-            authDomain: "accomodation-rental.firebaseapp.com",
-            projectId: "accomodation-rental",
-            storageBucket: "accomodation-rental.appspot.com",
-            messagingSenderId: "216200653654",
-            appId: "1:216200653654:web:a9adef2a9307ed628504f7",
-            measurementId: "G-B93DFG1GYE"
+            apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958 ",
+            authDomain: "accomodation-rental.firebaseapp.com ",
+            projectId: "accomodation-rental ",
+            storageBucket: "accomodation-rental.appspot.com ",
+            messagingSenderId: "216200653654 ",
+            appId: "1:216200653654:web:a9adef2a9307ed628504f7 ",
+            measurementId: "G-B93DFG1GYE "
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -337,9 +290,9 @@
         const db = firebase.firestore()
     </script>
     <!-- Firebase end -->
-    <script src="js/new_accomodation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    <script src="js/new_accomodation.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js "></script>
 </body>
 
 </html>
