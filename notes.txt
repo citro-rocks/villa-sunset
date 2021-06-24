@@ -11,3 +11,66 @@ Building an API With Firebase
 https://betterprogramming.pub/building-an-api-with-firebase-109041721f77
 
 
+<!-- Amenities -->
+                                    <div class="container container-fluid mt-3 " style="border: solid 1px; border-radius: 10px;">
+                                        <h4>Add accomodation amanities</h4>
+                                        <div class="row d-flex justify-content-between ">
+                                            <div class="col-md-6">
+                                                <div class="amenity-input">
+                                                    <div class="amnt-title-descr ">
+                                                        <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                            <div class="amenity-title p-2 ">
+                                                                <label for=" ">Amenity title</label>
+                                                                <input type="text " class="amnt-title form-control " id="amntTitle " placeholder="Insert amenity title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                            </div>
+                                                            <div class="amenity-description p-2 ">
+                                                                <label for=" ">Amenity description</label>
+                                                                <input type="text " class="amnt-description form-control " id="amntDescript " placeholder="Insert short amenity description " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                    <div class="amenity-image p-2 ">
+                                                        <label for=" ">Amenity image 400x300</label>
+                                                        <div class="input-group ">
+                                                            <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
+                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-icon p-2 ">
+                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                        <div class="amenity-icon ">
+                                                            <label for=" ">Amenity icon 50x50</label>
+                                                            <div class="input-group ">
+                                                                <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
+                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="amanity-preview">
+                                                    <label for=" ">Amanity preview</label>
+                                                    <div class="card d-flex align-items-center p-1 ">
+                                                        <h4>Amenity title</h4>
+                                                        <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                        <p>Amenity short description</p>
+                                                        <img class="icon rounded-circle " src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                        <div class="card-body p-1 ">
+                                                            <div class="card-btn ">
+                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add-new-amenity p-3">
+                                                <button class="btn btn-primary " type="button ">Add new amenity</button>
+                                            </div>
+                                        </div>
+                                    </div>
