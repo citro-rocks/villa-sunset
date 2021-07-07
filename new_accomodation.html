@@ -67,336 +67,244 @@
                     </div>
                     <!-- !!!: Apartments and prices-->
                     <section class="new-accomodation">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-12 p-3 m-3" style="border: solid 1px; border-radius: 10px;">
-                                    <div class="title-description-prices p-3">
-                                        <h3>Add title, description and prices</h3>
-                                    </div>
-                                    <div class="container container-fluid " style="border: solid 1px; border-radius: 10px;">
+                        <form action="#" id="addNew">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12 p-3 m-3" style="border: solid 1px; border-radius: 10px;">
                                         <div class="title-description-prices p-3">
-                                            <h3>Add title and description</h3>
+                                            <h3>Add title, description and prices</h3>
                                         </div>
-                                        <div class="header-edit ">
-                                            <label for="# ">New accomodation title</label>
-                                            <div id="apTitlePrvw " class="apartment-description-prvw ">
+                                        <div class="container container-fluid pb-4 mb-3" style="border: solid 1px; border-radius: 10px;">
+                                            <div class="title-description-prices p-3">
+                                                <h3>Add title and description</h3>
                                             </div>
-                                            <div class="input-group mb-1 ">
-                                                <input type="text " class="form-control " placeholder="Insert new accomodation title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
-                                                <!-- <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button> -->
-                                                <div class="title-prw ">
-                                                    <!-- title preeview -->
-                                                    <p></p>
+                                            <div class="new-accomodation">
+                                                <label for="# ">New accomodation title</label>
+                                                <div class="input-group mb-1">
+                                                    <input type="text " name="name" class="form-control accomodation-title" placeholder="Insert new accomodation title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                    <!-- <button class="btn btn-outline-primary " type="submit ">Add title</button> -->
                                                 </div>
-                                            </div>
-                                            <div class="ap-dscr mt-3 d-grid gap-2 d-md-block ">
-                                                <div class="apartment-dscription ">
-                                                    <label for="# ">Accomodation description</label>
-                                                    <div id="apDscrPrvw " class="apartment-description-prvw ">
+                                                <label for="#">Add new accomodation description</label>
+                                                <div class="input-group">
+                                                    <textarea class="form-control" name="description" id="" rows="3"></textarea>
+                                                </div>
+                                                <div class="row mt-2 ">
+                                                    <div class="col-sm-4 ">
+                                                        <div class="size-drop mt-3">
+                                                            <select id="sizeSelection " class="form-select " name="size" aria-label="Default select example ">
+                                                                        <option selected>Size in m2</option>
+                                                                        <option name="size" value="50">50 m2</option>
+                                                                        <option name="size" value="65">65 m2</option>
+                                                                        <option name="size" value="80">80 m2</option>
+                                                                        <option name="size" value="100">100 m2</option>
+                                                                    </select>
+                                                        </div>
                                                     </div>
-                                                    <textarea class="form-control " id="apartment-description " rows="3 "></textarea>
-                                                    <!-- <input type="text " id="apartment-description "> -->
-                                                    <!-- <div class="description-updt ">
-                                                    <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                    <div class="col-sm-4 ">
+                                                        <div class="size-drop mt-3">
+                                                            <select id="bedroomNo " class="bedroom form-select " name="bedrooms" aria-label="Default select example ">
+                                                                        <option selected>Number of bedrooms</option>
+                                                                        <option name="bedrooms" value="1">1</option>
+                                                                        <option name="bedrooms" value="2">2</option>
+                                                                        <option name="bedrooms" value="3">3</option>
+                                                                    </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 ">
+                                                        <div class="size-drop mt-3 ">
+                                                            <select id="bathroomNo " class="bathrooms form-select " name="bathrooms" aria-label="Default select example ">
+                                                                        <option selected>Number if bathrooms</option>
+                                                                        <option name="bathrooms" value="1">1</option>
+                                                                        <option name="bathrooms" value="2">2</option>
+                                                                        <option name="bathrooms" value="3">3</option>
+                                                                    </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="seasons-and-prices mt-5">
+                                                    <div class="row pb-4">
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <div class="seasons-prices-input">
+                                                                    <h4>Seasons and pices</h4>
+                                                                    <div class="input-group mb-3 ">
+                                                                        <input type="text " class="form-control " name="seasonName" placeholder="Insert season title " aria-label="apartment-title " aria-describedby="button-addon2 ">
+                                                                        <input type="number " class="form-control " name="price" placeholder="Insert price " aria-label="apartment-price " aria-describedby="button-addon2 ">
+                                                                        <!-- <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Seasons and prices preview -->
+                                                        <div class="col-md-6">
+                                                            <div class="season-preview">
+                                                                <div class="row" id="seasonsPrices">
+                                                                    <!-- Prices preview -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- add button -->
+                                                <!-- <div class="add-new-season-price pb-3">
+                                                    <button class="btn btn-primary " type="button ">Add new</button>
                                                 </div> -->
-                                                </div>
+
+                                                <!-- <div class="add-new-season-price pb-3">
+                                                        <button class="btn btn-primary " type="button ">Add new</button>
+                                                    </div>
+                                                    </form> -->
                                             </div>
                                         </div>
-                                        <div class="row mt-2 ">
-                                            <div class="col-sm-4 ">
-                                                <div class="size-drop mt-3">
-                                                    <select id="sizeSelection " class="form-select " aria-label="Default select example ">
-                                                    <option selected>Size in m2</option>
-                                                    <option value="50 ">50 m2</option>
-                                                    <option value="65 ">65 m2</option>
-                                                    <option value="80 ">80 m2</option>
-                                                    <option value="100 ">100 m2</option>
-                                                  </select>
+                                        <!-- Gallery and amenitys-->
+                                        <div class="container container-fluid " style="border: solid 1px; border-radius: 10px;">
+                                            <div class="col-lg-12 p-3">
+                                                <div class="gallery-and-amenities">
+                                                    <h3>Add accomodation images and amenities</h3>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-4 ">
-                                                <div class="size-drop mt-3">
-                                                    <select id="bedroomNo " class="bedroom form-select " aria-label="Default select example ">
-                                                    <option selected>Number of bedrooms</option>
-                                                    <option value="one ">1</option>
-                                                    <option value="two ">2</option>
-                                                    <option value="three ">3</option>
-                                                  </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 ">
-                                                <div class="size-drop mt-3 ">
-                                                    <select id="bathroomNo " class="bathrooms form-select " aria-label="Default select example ">
-                                                    <option selected>Number if bathrooms</option>
-                                                    <option value="one ">1</option>
-                                                    <option value="two ">2</option>
-                                                    <option value="three ">3</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="seasons-and-prices mt-5">
-                                            <div class="row pb-4">
-                                                <div class="col-md-6">
-                                                    <div class="input">
-                                                        <div class="seasons-prices-input">
-                                                            <h4>Seasons and pices</h4>
-                                                        </div>
-                                                        <div class="input-group mb-3 ">
-                                                            <input type="text " class="form-control " placeholder="Insert season title " aria-label="apartment-title " aria-describedby="button-addon2 ">
-                                                            <input type="number " class="form-control " placeholder="Insert season price " aria-label="apartment-price " aria-describedby="button-addon2 ">
-                                                            <button class="btn btn-outline-primary " type="button " id="button-addon2 ">Update</button>
-                                                            <!-- price preeview -->
-                                                            <div class="price-prw ">
-                                                                <p></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="add-new-season-price ">
-                                                            <button class="btn btn-primary " type="button ">Add new season and price</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Seasons and prices preview -->
-                                                <div class="col-md-6">
-                                                    <div class="season-preview">
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="card d-flex align-items-center p-1 ">
-                                                                    <h5>Mid season</h5>
-                                                                    <p>150$</p>
-                                                                    <div class="card-body p-1 ">
-                                                                        <div class="card-btn ">
-                                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit</button>
-                                                                            <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="card d-flex align-items-center p-1 ">
-                                                                    <h5>Top season</h5>
-                                                                    <p>200 $</p>
-                                                                    <div class="card-body p-1 ">
-                                                                        <div class="card-btn ">
-                                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit</button>
-                                                                            <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="card d-flex align-items-center p-1 ">
-                                                                    <h5>Low season</h5>
-                                                                    <p>100$</p>
-                                                                    <div class="card-body p-1 ">
-                                                                        <div class="card-btn ">
-                                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit</button>
-                                                                            <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="card d-flex align-items-center p-1 ">
-                                                                    <h5>Special</h5>
-                                                                    <p>100$</p>
-                                                                    <div class="card-body p-1 ">
-                                                                        <div class="card-btn ">
-                                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit</button>
-                                                                            <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Gwllwery and amenitys-->
-                                <div class="col-lg-12 p-3 m-3" style="border: solid 1px; border-radius: 10px;">
-                                    <div class="gallery-and-amenities p-3">
-                                        <h3>Add accomodation images and amenities</h3>
-                                    </div>
-                                    <div class="container container-fluid " style="border: solid 1px; border-radius: 10px;">
-                                        <!-- Uploaad apartment images -->
-                                        <div class="row d-flex justify-content-between mb-3">
-                                            <h3>Image galery</h3>
-                                            <div class="img-upload ">
-                                                <label for="# ">Upload image (recomended size 900x600)</label>
-                                                <div class="input-group ">
-                                                    <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
-                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Gallery preeview -->
-                                        <h4>Gallery preview</h4>
-                                        <div class="row d-flex justify-content-between pb-4">
-                                            <div class="col-md-3 col-sm-6 ">
-                                                <div class="card d-flex align-items-center p-1 ">
-                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
-                                                    <div class="card-body p-1 ">
-                                                        <div class="card-btn ">
-                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6">
-                                                <div class="card d-flex align-items-center p-1 ">
-                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
-                                                    <div class="card-body p-1 ">
-                                                        <div class="card-btn ">
-                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 ">
-                                                <div class="card d-flex align-items-center p-1 ">
-                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
-                                                    <div class="card-body p-1 ">
-                                                        <div class="card-btn ">
-                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 ">
-                                                <div class="card d-flex align-items-center p-1 ">
-                                                    <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
-                                                    <div class="card-body p-1 ">
-                                                        <div class="card-btn ">
-                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Amenities -->
-                                    <div class="container container-fluid mt-3 " style="border: solid 1px; border-radius: 10px;">
-                                        <h4>Add accomodation amanities</h4>
-                                        <div class="row d-flex justify-content-between ">
-                                            <div class="col-md-6">
-                                                <div class="amenity-input">
-                                                    <div class="amnt-title-descr ">
-                                                        <div class="ap-dscr d-grid gap-2 d-md-block ">
-                                                            <div class="amenity-title p-2 ">
-                                                                <label for=" ">Amenity title</label>
-                                                                <input type="text " class="amnt-title form-control " id="amntTitle " placeholder="Insert amenity title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
-                                                            </div>
-                                                            <div class="amenity-description p-2 ">
-                                                                <label for=" ">Amenity description</label>
-                                                                <input type="text " class="amnt-description form-control " id="amntDescript " placeholder="Insert short amenity description " aria-label="accomodation-title " aria-describedby="button-addon2 ">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-2">
-                                                <div class="ap-dscr d-grid gap-2 d-md-block ">
-                                                    <div class="amenity-image p-2 ">
-                                                        <label for=" ">Amenity image 400x300</label>
-                                                        <div class="input-group ">
-                                                            <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
-                                                            <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="add-icon p-2 ">
-                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
-                                                        <div class="amenity-icon ">
-                                                            <label for=" ">Amenity icon 50x50</label>
+                                                <div class="container container-fluid ">
+                                                    <!-- Uploaad apartment images -->
+                                                    <div class="row d-flex justify-content-between">
+                                                        <h3>Image galery</h3>
+                                                        <div class="img-upload ">
+                                                            <label for="# ">Upload image (recomended size 900x600)</label>
                                                             <div class="input-group ">
-                                                                <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
-                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button>
+                                                                <input class="form-control " type="file" id="image" value="upload" />
+                                                                <button class="btn btn-outline-primary btn-sm " onclick="uploadImage()" type="submit" id="upButton">Upload</button>
+                                                                <progress class="progress-bar mt-2" value="0" max="100" id="uploader" style="width: 100%;">0%</progress>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <!-- Amenity preview -->
-                                            <h4>Amenity preview</h4>
-                                            <div class="col-lg-3 col-sm-6">
-                                                <div class="amanity-preview">
-                                                    <div class="card d-flex align-items-center p-1 ">
-                                                        <h4>Amenity title</h4>
-                                                        <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
-                                                        <p>Amenity short description</p>
-                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
-                                                        <div class="card-body p-1 ">
-                                                            <div class="card-btn ">
-                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
-                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
-                                                            </div>
-                                                        </div>
+                                                    <!-- Gallery preeview -->
+                                                    <div class="row d-flex justify-content-between mb-3" id="gallery">
+
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-3 col-sm-6">
-                                                <div class="amanity-preview">
-                                                    <div class="card d-flex align-items-center p-1 ">
-                                                        <h4>Amenity title</h4>
-                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
-                                                        <p>Amenity short description</p>
-                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
-                                                        <div class="card-body p-1 ">
-                                                            <div class="card-btn ">
-                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
-                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                <!-- Amenities -->
+                                                <div class="container container-fluid mt-3 ">
+                                                    <h4>Add accomodation amanities</h4>
+                                                    <div class="row d-flex justify-content-between ">
+                                                        <div class="col-md-6">
+                                                            <div class="amenity-input">
+                                                                <div class="amnt-title-descr ">
+                                                                    <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                                        <div class="amenity-title p-2 ">
+                                                                            <label for=" ">Amenity title</label>
+                                                                            <input type="text " class="amnt-title form-control" name="title" id="amntTitle " placeholder="Insert amenity title " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                                        </div>
+                                                                        <div class="amenity-description p-2 ">
+                                                                            <label for=" ">Amenity description</label>
+                                                                            <input type="text " class="amnt-description form-control " name="amntDescription" id="amntDescript " placeholder="Insert short amenity description " aria-label="accomodation-title " aria-describedby="button-addon2 ">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-sm-6">
-                                                <div class="amanity-preview">
-                                                    <div class="card d-flex align-items-center p-1 ">
-                                                        <h4>Amenity title</h4>
-                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
-                                                        <p>Amenity short description</p>
-                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
-                                                        <div class="card-body p-1 ">
-                                                            <div class="card-btn ">
-                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
-                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                        <div class="col-md-6 mb-2">
+                                                            <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                                <div class="amenity-image p-2 ">
+                                                                    <label for=" ">Amenity image 400x300</label>
+                                                                    <div class="input-group ">
+                                                                        <input class="form-control " id="upload " name="img" type="file" onchange="readURL(this);" value>
+                                                                        <!-- <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="add-icon p-2 ">
+                                                                <div class="ap-dscr d-grid gap-2 d-md-block ">
+                                                                    <div class="amenity-icon ">
+                                                                        <label for=" ">Amenity icon 50x50</label>
+                                                                        <div class="input-group ">
+                                                                            <input class="form-control " id="upload " type="file" onchange="readURL(this); " value>
+                                                                            <!-- <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Upload</button> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-sm-6">
-                                                <div class="amanity-preview">
-                                                    <div class="card d-flex align-items-center p-1 ">
-                                                        <h4>Amenity title</h4>
-                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
-                                                        <p>Amenity short description</p>
-                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
-                                                        <div class="card-body p-1 ">
-                                                            <div class="card-btn ">
-                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
-                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                        <div class="row d-flex" id="amenity-preview">
+                                                            <h4>Amenity preview</h4>
+                                                            <!-- <div class="col-lg-3 col-sm-6">
+                                                                <div class="amanity-preview">
+                                                                    <div class="card d-flex align-items-center p-1 ">
+                                                                        <h4>Amenity title</h4>
+                                                                        <img class="card-img-top img-fluid " src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                                        <p>Amenity short description</p>
+                                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                                        <div class="card-body p-1 ">
+                                                                            <div class="card-btn ">
+                                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
+                                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                            <div class="col-lg-3 col-sm-6">
+                                                                <div class="amanity-preview">
+                                                                    <div class="card d-flex align-items-center p-1 ">
+                                                                        <h4>Amenity title</h4>
+                                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                                        <p>Amenity short description</p>
+                                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                                        <div class="card-body p-1 ">
+                                                                            <div class="card-btn ">
+                                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
+                                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6">
+                                                                <div class="amanity-preview">
+                                                                    <div class="card d-flex align-items-center p-1 ">
+                                                                        <h4>Amenity title</h4>
+                                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                                        <p>Amenity short description</p>
+                                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                                        <div class="card-body p-1 ">
+                                                                            <div class="card-btn ">
+                                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
+                                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6">
+                                                                <div class="amanity-preview">
+                                                                    <div class="card d-flex align-items-center p-1 ">
+                                                                        <h4>Amenity title</h4>
+                                                                        <img class="card-img-top img-fluid p-2" src="https://via.placeholder.com/400x300 " alt="Card image ">
+                                                                        <p>Amenity short description</p>
+                                                                        <img class="icon rounded-circle p-2" src="https://via.placeholder.com/100x100 " alt="Card icon ">
+                                                                        <div class="card-body p-1 ">
+                                                                            <div class="card-btn ">
+                                                                                <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Edit amenity</button>
+                                                                                <button class="btn btn-outline-danger btn-sm " type="button " id="button-addon2 ">Delete amenity</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> -->
                                                         </div>
+                                                        <!-- Amenity preview row d-flex justify-content-between  -->
+
+                                                        <!-- <div class="add-new-amenity p-3">
+                                                            <button class="btn btn-primary " type="button ">Add new amenity</button>
+                                                        </div> -->
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="add-new-amenity p-3">
-                                                <button class="btn btn-primary " type="button ">Add new amenity</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Add accomodation button -->
-                        <div class="add-new-accomodation p-4 ">
-                            <button class="btn btn-primary " type="button ">Create new accomodation</button>
-                        </div>
+                            <div class="add-new-accomodation p-4 ">
+                                <button class="btn btn-primary " type="button ">Create new accomodation</button>
+                            </div>
+                        </form>
                     </section>
                 </div>
             </div>
@@ -405,24 +313,25 @@
     <!-- !!!: Script -->
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js "></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js "></script>
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-            apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958 ",
-            authDomain: "accomodation-rental.firebaseapp.com ",
-            projectId: "accomodation-rental ",
-            storageBucket: "accomodation-rental.appspot.com ",
-            messagingSenderId: "216200653654 ",
-            appId: "1:216200653654:web:a9adef2a9307ed628504f7 ",
-            measurementId: "G-B93DFG1GYE "
+            apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958",
+            authDomain: "accomodation-rental.firebaseapp.com",
+            projectId: "accomodation-rental",
+            storageBucket: "accomodation-rental.appspot.com",
+            messagingSenderId: "216200653654",
+            appId: "1:216200653654:web:a9adef2a9307ed628504f7",
+            measurementId: "G-B93DFG1GYE"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
