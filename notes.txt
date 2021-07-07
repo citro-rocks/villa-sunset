@@ -74,3 +74,92 @@ https://betterprogramming.pub/building-an-api-with-firebase-109041721f77
                                             </div>
                                         </div>
                                     </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958",
+    authDomain: "accomodation-rental.firebaseapp.com",
+    projectId: "accomodation-rental",
+    storageBucket: "accomodation-rental.appspot.com",
+    messagingSenderId: "216200653654",
+    appId: "1:216200653654:web:a9adef2a9307ed628504f7",
+    measurementId: "G-B93DFG1GYE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+<div class="title-prw ">
+                                                            <!-- title preeview -->
+                                                            <!-- <p></p>
+                                                            </div>
+                                                            </div>
+                                                            <div class="ap-dscr mt-3 d-grid gap-2 d-md-block ">
+                                                            <div class="apartment-dscription ">
+                                                            <label for="# ">Accomodation description</label>
+                                                            <div id="apDscrPrvw " class="apartment-description-prvw ">
+                                                            </div>
+                                                            <textarea class="form-control " id="apartment-description " rows="3 "></textarea>
+                                                            <!-- <input type="text " id="apartment-description "> -->
+                                                            <!-- <div class="description-updt ">
+                                                                <button class="btn btn-outline-primary float-end mt-1 " type="button " id="button-addon2 ">Add</button>
+                                                            </div> -->
+                                                        </div>
+
+                                                         onchange="readURL(this); "
+
+
+
+
+                                                         <!-- <div class="col-md-3 col-sm-6 ">
+                                                        <div class="card d-flex align-items-center p-1 ">
+                                                            <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
+                                                            <div class="card-body p-1 ">
+                                                                <div class="card-btn ">
+                                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <!--<div class="col-md-3 col-sm-6">
+                                                        <div class="card d-flex align-items-center p-1 ">
+                                                            <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
+                                                            <div class="card-body p-1 ">
+                                                                <div class="card-btn ">
+                                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-6 ">
+                                                        <div class="card d-flex align-items-center p-1 ">
+                                                            <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
+                                                            <div class="card-body p-1 ">
+                                                                <div class="card-btn ">
+                                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-6 ">
+                                                        <div class="card d-flex align-items-center p-1 ">
+                                                            <img class="card-img-top img-fluid " src="https://via.placeholder.com/900x600 " alt="Card image ">
+                                                            <div class="card-body p-1 ">
+                                                                <div class="card-btn ">
+                                                                    <button class="btn btn-outline-primary btn-sm " type="button " id="button-addon2 ">Delete image</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
