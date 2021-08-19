@@ -22,7 +22,11 @@ newAccomodation.addEventListener('submit', (e) => {
                 title: newAccomodation.title.value,
                 amntDescription: newAccomodation.amntDescription.value,
             },
-        },
+        }
+        // images: {
+        //     title: "",
+        //     link: ""
+        // },
     })
 
     newAccomodation.name.value = ''
@@ -113,45 +117,7 @@ db.collection('amanities').get().then((snapshot) => {
     })
 })
 
-
-
-//  Upload Accomodation images (Exp. 1)
-
-// const uploader = document.getElementById('uploader')
-// let upload = document.getElementById('image')
-
-// upload = document.addEventListener('change', function(e) {
-//     // Get file
-//     var file = e.target.files[0];
-//     // Create storage ref
-//     var storageRef = firebase.storage().ref('accomodation/' + file.name)
-
-
-//     // Upload a file
-//     var task = storageRef.put(file);
-
-//     // Update progress bar
-//     task.on('state_changed',
-
-//         function progress(snapshot) {
-//             let percentage = (snapshot.bytesTransferred /
-//                 snapshot.totalBytes) * 100;
-//             uploader.value = percentage;
-//         },
-
-//         function error(err) {
-
-//         },
-
-//         function complete() {
-
-//         }
-
-//     );
-// });
-
-
-// Upload accomodation images
+// Upload images
 
 // Example 2
 const uploader = document.getElementById('uploader')
@@ -159,7 +125,7 @@ const uploader = document.getElementById('uploader')
 function uploadImage() {
     const ref = firebase.storage().ref()
 
-    const file = document.querySelector("#image").files[0]
+    const file = document.querySelector("#image").files[9]
 
     // const name = new Date() + '-' + file.name
     const name = 'accomodation/' + file.name
@@ -196,6 +162,3 @@ function uploadImage() {
     );
 
 }
-
-
-// Show images from firebase

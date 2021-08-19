@@ -67,12 +67,12 @@
                     </div>
                     <!-- !!!: Apartments and prices-->
                     <section class="new-accomodation">
-                        <form action="#" id="addNew">
+                        <form action="#">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-lg-12 p-3 m-3" style="border: solid 1px; border-radius: 10px;">
                                         <div class="title-description-prices p-3">
-                                            <h3>Add title, description and prices</h3>
+                                            <h3>Add title, description, prices</h3>
                                         </div>
                                         <div class="container container-fluid pb-4 mb-3" style="border: solid 1px; border-radius: 10px;">
                                             <div class="title-description-prices p-3">
@@ -169,7 +169,7 @@
                                                         <div class="img-upload ">
                                                             <label for="# ">Upload image (recomended size 900x600)</label>
                                                             <div class="input-group ">
-                                                                <input class="form-control " type="file" id="image" value="upload" />
+                                                                <input class="form-control " type="file" id="image" value="upload" multiple>
                                                                 <button class="btn btn-outline-primary btn-sm " onclick="uploadImage()" type="submit" id="upButton">Upload</button>
                                                                 <progress class="progress-bar mt-2" value="0" max="100" id="uploader" style="width: 100%;">0%</progress>
                                                             </div>
@@ -301,7 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="add-new-accomodation p-4 ">
+                            <div class="add-new-accomodation p-4" id="addNew">
                                 <button class="btn btn-primary " type="button ">Create new accomodation</button>
                             </div>
                         </form>
@@ -314,6 +314,7 @@
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js "></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js "></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js "></script>
 
@@ -322,11 +323,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
     <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
             apiKey: "AIzaSyBXHWxi-kiD4xCcH5UApZlKfDtsGYW2958",
             authDomain: "accomodation-rental.firebaseapp.com",
+            databaseURL: "https://accomodation-rental-default-rtdb.firebaseio.com",
             projectId: "accomodation-rental",
             storageBucket: "accomodation-rental.appspot.com",
             messagingSenderId: "216200653654",
@@ -336,8 +336,14 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-
         const db = firebase.firestore()
+        db.settings({
+            timestampsInSnapshots: true
+        });
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        // const db = firebase.database()
     </script>
     <!-- Firebase end -->
     <script src="js/new_accomodation.js "></script>

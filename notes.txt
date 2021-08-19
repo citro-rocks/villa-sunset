@@ -163,3 +163,40 @@ https://betterprogramming.pub/building-an-api-with-firebase-109041721f77
                                                             </div>
                                                         </div>
                                                     </div> -->
+
+
+ 
+//  Upload Accomodation images (Exp. 1)
+
+// const uploader = document.getElementById('uploader')
+// let upload = document.getElementById('image')
+
+// upload = document.addEventListener('change', function(e) {
+//     // Get file
+//     var file = e.target.files[0];
+//     // Create storage ref
+//     var storageRef = firebase.storage().ref('accomodation/' + file.name)
+
+
+//     // Upload a file
+//     var task = storageRef.put(file);
+
+//     // Update progress bar
+//     task.on('state_changed',
+
+//         function progress(snapshot) {
+//             let percentage = (snapshot.bytesTransferred /
+//                 snapshot.totalBytes) * 100;
+//             uploader.value = percentage;
+//         },
+
+//         function error(err) {
+
+//         },
+
+//         function complete() {
+
+//         }
+
+//     );
+// });                                                   
