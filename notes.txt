@@ -199,4 +199,7 @@ https://betterprogramming.pub/building-an-api-with-firebase-109041721f77
 //         }
 
 //     );
-// });                                                   
+// });      
+
+let deleteBtn = document.createElement('button').setAttribute("id", "dltImg")
+                document.getElementById('imagesx').appendChild('deleteBtn')

@@ -119,6 +119,8 @@ db.collection('amanities').get().then((snapshot) => {
 
 // Upload images
 
+
+
 // Example 2
 const uploader = document.getElementById('uploader')
 
